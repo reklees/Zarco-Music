@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarco Music - Privacy Policy & Terms of Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #000000;
+            --secondary: #ffffff;
+            --accent: #7289da;
+            --gray: #2c2f33;
+            --light-gray: #99aab5;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: var(--secondary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80') center/cover no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            text-shadow: 0 0 15px rgba(114, 137, 218, 0.8);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: var(--light-gray);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .premium-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff8c00, #ffd700);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin: 15px 0;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid transparent;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+        }
+        
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .section {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(20, 20, 20, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .section-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: var(--accent);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            color: var(--secondary);
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #dcddde;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: #dcddde;
+        }
+        
+        .highlight {
+            background: rgba(114, 137, 218, 0.2);
+            padding: 3px 8px;
+            border-radius: 5px;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+        
+        .disclaimer {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #ffd700;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+        
+        .developer {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .logo {
+                font-size: 3rem;
+            }
+            
+            .content-container {
+                flex-direction: column;
+            }
+        }
+        
+        .tabs {
+            display: flex;
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+        
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .tab.active {
+            background: var(--accent);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .scroll-top.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-music"></i>
+            </div>
+            <h1>Zarco Music</h1>
+            <p class="tagline">Smooth, uninterrupted audio made for serious communities</p>
+            <div class="premium-badge">
+                <i class="fas fa-crown"></i> Premium Music Experience — For Premium Servers
+            </div>
+            <div class="cta-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1380992963642916934" class="btn">
+                    <i class="fas fa-robot"></i> Invite Bot
+                </a>
+                <a href="https://discord.gg/6YVmxA4Qsf" class="btn btn-secondary">
+                    <i class="fab fa-discord"></i> Join Server
+                </a>
+            </div>
+        </header>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="policy">Privacy Policy</div>
+            <div class="tab" data-tab="terms">Terms of Service</div>
+        </div>
+        
+        <div class="tab-content active" id="policy-content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h2>Privacy Policy</h2>
+                </div>
+                
+                <p>Last Updated: June 30, 2025</p>
+                
+                <p>This Privacy Policy describes how Zarco Music ("we", "us", or "our") collects, uses, and discloses your information when you use our Discord bot (the "Service").</p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>To provide our Service, we may collect and process the following information:</p>
+                <ul>
+                    <li><span class="highlight">Server Information:</span> Guild ID, server name, and server settings/preferences</li>
+                    <li><span class="highlight">Channel Information:</span> IDs of text and voice channels where the bot is used</li>
+                    <li><span class="highlight">User Information:</span> User IDs of users interacting with the bot</li>
+                    <li><span class="highlight">Command Usage:</span> Commands executed and their timestamps</li>
+                    <li><span class="highlight">Audio Metadata:</span> Titles and sources of played music tracks</li>
+                </ul>
+                
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our Service</li>
+                    <li>To monitor usage and performance of the bot</li>
+                    <li>To troubleshoot technical issues</li>
+                    <li>To enforce our Terms of Service</li>
+                    <li>To develop new features and functionality</li>
+                </ul>
+                
+                <h3>3. Data Storage and Security</h3>
+                <p>We implement reasonable security measures to protect your data:</p>
+                <ul>
+                    <li>Data is stored on secure servers with restricted access</li>
+                    <li>We retain server configuration data until the bot is removed from a server</li>
+                    <li>Usage logs are retained for up to 30 days for operational purposes</li>
+                </ul>
+                
+                <h3>4. Data Sharing</h3>
+                <p>We do not sell or rent your personal information to third parties. We may disclose your information:</p>
+                <ul>
+                    <li>To comply with legal obligations or valid legal process</li>
+                    <li>To protect the rights and safety of our users and the public</li>
+                    <li>With service providers who assist in operating our Service (subject to confidentiality agreements)</li>
+                </ul>
+                
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Request access to your personal data</li>
+                    <li>Request correction or deletion of your data</li>
+                    <li>Withdraw consent where applicable</li>
+                </ul>
+                <p>To exercise these rights, contact us at our Discord support server.</p>
+                
+                <h3>6. Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time. We will notify users of significant changes through our Discord server or via bot notification.</p>
+                
+                <div class="disclaimer">
+                    <p><i class="fas fa-exclamation-circle"></i> <strong>Note:</strong> Zarco Music does not collect sensitive personal information. The bot only accesses information necessary to provide its music services within Discord.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="terms-content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h2>Terms of Service</h2>
+                </div>
+                
+                <p>Last Updated: June 30, 2025</p>
+                
+                <p>By inviting Zarco Music to your Discord server or using its features, you agree to these Terms of Service.</p>
+                
+                <h3>1. Acceptance of Terms</h3>
+                <p>Your access to and use of Zarco Music is conditioned on your acceptance of these Terms. By using the bot, you agree to be bound by these Terms.</p>
+                
+                <h3>2. Service Description</h3>
+                <p>Zarco Music provides music streaming services within Discord voice channels. The bot allows users to play, queue, and manage audio tracks from various sources.</p>
+                
+                <h3>3. Premium Service</h3>
+                <p>Zarco Music offers enhanced features for Premium Servers:</p>
+                <ul>
+                    <li>Higher audio quality (up to 320kbps)</li>
+                    <li>Priority access during high demand periods</li>
+                    <li>Extended playlist capabilities</li>
+                    <li>Advanced audio effects</li>
+                </ul>
+                <p>Premium status is granted at our discretion and may be revoked for violation of these Terms.</p>
+                
+                <h3>4. User Responsibilities</h3>
+                <p>When using Zarco Music, you agree to:</p>
+                <ul>
+                    <li>Comply with Discord's Terms of Service and Community Guidelines</li>
+                    <li>Not use the bot for illegal activities or content</li>
+                    <li>Not attempt to disrupt or overload the bot's services</li>
+                    <li>Not use the bot to violate copyright laws</li>
+                    <li>Obtain necessary permissions for bot use in your server</li>
+                </ul>
+                
+                <h3>5. Prohibited Uses</h3>
+                <p>You may not:</p>
+                <ul>
+                    <li>Reverse engineer, decompile, or disassemble the bot</li>
+                    <li>Use the bot to distribute malware or harmful content</li>
+                    <li>Spam commands or abuse the bot's functionality</li>
+                    <li>Impersonate the bot or its developers</li>
+                    <li>Use the bot in servers that promote hate speech, harassment, or illegal activities</li>
+                </ul>
+                
+                <h3>6. Intellectual Property</h3>
+                <p>Zarco Music and its original content, features, and functionality are owned by ZarCodeX and are protected by international copyright, trademark, and other intellectual property laws.</p>
+                
+                <h3>7. Limitation of Liability</h3>
+                <p>In no event shall ZarCodeX be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:</p>
+                <ul>
+                    <li>Your access to or use of or inability to access or use the Service</li>
+                    <li>Any conduct or content of any third party on the Service</li>
+                    <li>Unauthorized access, use or alteration of your transmissions or content</li>
+                </ul>
+                
+                <h3>8. Termination</h3>
+                <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                
+                <h3>9. Changes to Terms</h3>
+                <p>We reserve the right to modify these Terms at any time. Your continued use of the Service after any such changes constitutes your acceptance of the new Terms.</p>
+                
+                <div class="disclaimer">
+                    <p><i class="fas fa-exclamation-triangle"></i> <strong>Important:</strong> Zarco Music is provided "as is" without warranties of any kind. We are not responsible for content played through the bot. Server administrators are responsible for ensuring compliance with copyright laws in their jurisdiction.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Zarco Music is developed and maintained by ZarCodeX</p>
+            <p>For support, questions, or concerns, please join our Discord server:</p>
+            <p class="developer">
+                <a href="https://discord.gg/6YVmxA4Qsf" style="color: #7289da; text-decoration: none;">
+                    <i class="fab fa-discord"></i> Zarco HQ: https://discord.gg/6YVmxA4Qsf
+                </a>
+            </p>
+            <p>© 2025 ZarCodeX. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show corresponding tab content
+                const tabName = tab.getAttribute('data-tab');
+                document.getElementById(`${tabName}-content`).classList.add('active');
+            });
+        });
+        
+        // Scroll to top functionality
+        const scrollTopButton = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopButton.classList.add('visible');
+            } else {
+                scrollTopButton.classList.remove('visible');
+            }
+        });
+        
+        scrollTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Animate page elements on load
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelector('header').style.opacity = 1;
+                document.querySelector('header').style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
